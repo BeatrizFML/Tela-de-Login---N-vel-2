@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Login</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            html {
+                height: 100%;
+            }
+
+            body {
+                background-image: linear-gradient(to bottom, #2244FF 0%, #001A8F 30%, #001A8F 70%, #2244FF 100%);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin-top: 150px;
+            }
+            
+            .tela {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                width: 100%;
+                max-width: 1100px;
+            }
+            
+            .login {
+                background-color: #3656FC;
+                border-radius: 20px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+                overflow: hidden;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
+            
+            .topo {
+                display: grid;
+                place-items: center;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .logo {
+                background-image: url("https://static.vecteezy.com/system/resources/previews/009/887/179/non_2x/white-flower-free-png.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 100px;
+            }
+            
+            .conteudo {
+                background-color: white;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center
+            }
+            
+            .btn {
+                border: none;
+                border-radius: 25px;
+                padding: 12px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                text-align: center;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+            
+            .btn:hover {
+                filter: brightness(0.85);
+            }
+            
+            .touch {
+                display: grid;
+                place-items: center;
+                gap: 10px;
+                font-size: 12px;
+                color: #cbd5e1;
+                margin: 15px 0;
+            }
+            
+            .circulo {
+                width: 50px;
+                height: 50px;
+                border: 2px dashed white;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-size: 20px;
+            }
+            
+            .campo-input {
+                position: relative;
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 25px;
+            }
+            
+            .icone {
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 16px;
+                pointer-events: none;
+            }
+            
+            .campo-input input {
+                width: 100%;
+                padding: 12px 12px 12px 40px;
+                border: 1px solid gray;
+                border-radius: 25px;
+                font-size: 16px;
+                outline: none;
+            }
+            
+            .coiso {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 300px;
+                margin-top: 20px;
+            }
+            
+            .rodape {
+                display: flex;
+                place-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tela">
+            
+            <div class="login">
+                <div class="topo">
+                    <div class="logo"></div>
+                </div>
+                
+                <div class="conteudo">
+                    <div class="campo-input">
+                        <span class="icone">👤</span>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    
+                    <div class="campo-input">
+                        <span class="icone">🔒</span>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    
+                    <label>
+                        <input type="checkbox"> Termos & Condições
+                    </label>
+                    
+                    <div class="coiso">
+                        <button class="btn" style="background-color:#3656FC; width:45%; margin-bottom: 0;">Sign in</button>
+                        <a href="#" style="font-size: 13px; color: #3656FC; text-decoration: none;">Lembrar senha</a>
+                    </div>
+                    <br> <br> <br>
+                    Sign in with Social Media! <br>
+                    <div style="display:flex; gap:10px; margin-top: 10px;">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/042/127/218/small/round-circle-blue-facebook-logo-with-long-shadow-on-a-transparent-background-free-png.png" width='30px' height='30px'>
+                        <img src="https://images.vexels.com/media/users/3/137419/isolated/svg/b1a3fab214230557053ed1c4bf17b46c.svg" width='30px' height='30px'>
+                        <img src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" width='30px' height='30px'>
+                    </div>
+                </div>
+                
+                <div class="rodape">
+                    Não tem uma conta? <a href="#">Sign up ➔</a>
+                </div>
+            </div>
+                
+            <div class="login">
+                <div class="topo">
+                    <div class="logo"></div>
+                    <h3>COMPANY NAME</h3>
+                    SLOGAN HERE <br> <br>
+                </div>
+                
+                <div class="conteudo" style="background-color:#3656FC;">
+                    <button class="btn" style="background-color: white;">Sign in</button>
+                    <button class="btn" style="background-color: white;">Sign up</button>
+                </div>
+                <div class="touch">
+                    <p>Login rápido com Touch ID!</p>
+                    <div class="circulo">✋</div>
+                    <p>Use o Touch ID</p>
+                </div>
+                
+                <div class="rodape">
+                    
+                </div>
+            </div>
+            
+            <div class="login">
+                <div class="topo">
+                    <div class="logo"></div>
+                </div>
+                <div class="conteudo">
+                    <div class="campo-input">
+                        <span class="icone">👤</span>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    
+                    <div class="campo-input">
+                        <span class="icone">✉</span>
+                        <input type="text" placeholder="email@gmail.com">
+                    </div>
+                    
+                    <div class="campo-input">
+                        <span class="icone">🔒</span>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <label>
+                        <input type="checkbox"> Termos & Condições
+                    </label>
+                    
+                    <button class="btn" style="background-color: #3656FC; width:50%;margin-top:30px">Sign up</button>
+                    
+                </div>
+                
+                <div class="rodape">
+                    Já tem uma conta? <a href="#">Sign in ➔</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
